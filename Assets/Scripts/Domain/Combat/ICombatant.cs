@@ -1,4 +1,4 @@
-namespace Domain
+namespace Domain.Combat
 {
     public interface ICombatant
     {

@@ -6,8 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="ef20ccdd-a4ff-46c4-bf2a-073e0e2faba1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Hero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/ICombatant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/ICombatant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackuseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackuseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/DodgeUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/DodgeUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/CombatStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatStats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/CombatStats.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatStats.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/DamageFormula.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/DamageFormula.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/DamageFormula.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/DamageFormula.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatantEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Hero.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatantEntity.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/ICombatant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/ICombatant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/ICombatant.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/ICombatant.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/BasicAttackUseCasesTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/BasicAttackUseCasesTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/DamageFormulaTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/DamageFormulaTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/DodgeUseCaseTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/DodgeUseCaseTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/HeroTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/CombatantEntityTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/HeroTests.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/CombatantEntityTests.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/uses-cases" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,11 +48,23 @@
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Messhias/ashes-of-blanace",
     "accountId": "290f8cb9-1d2c-4bb1-80e4-2fdca0b6963d"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "Messhias",
+    "repository": "ashes-of-blanace"
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackuseCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/DodgeUseCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/fabio/Documents/projects/ashes-of-balance/Assets/Scripts/Domain/Hero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tests/BasicAttackUseCasesTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tests/DodgeUseCaseTests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -62,7 +87,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "git-widget-placeholder": "feature/uses-cases"
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -131,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762460647638</updated>
-      <workItem from="1762460650288" duration="2746000" />
+      <workItem from="1762460650288" duration="4447000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -141,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762460795646</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first uses cases finished">
+      <option name="closed" value="true" />
+      <created>1762463569946</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762463569947</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -157,7 +190,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -166,7 +211,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="first uses cases finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="first uses cases finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -183,19 +229,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackuseCase.cs</url>
-          <line>11</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackuseCase.cs" containingFunctionPresentation="Method 'Execute'">
-            <startOffsets>
-              <option value="289" />
-            </startOffsets>
-            <endOffsets>
-              <option value="331" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

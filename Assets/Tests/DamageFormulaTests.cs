@@ -1,4 +1,5 @@
-using Assets.Scripts.Domain;
+using Domain;
+using Domain.Combat;
 using NUnit.Framework;
 
 namespace Tests

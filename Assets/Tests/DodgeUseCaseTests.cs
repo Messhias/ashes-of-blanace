@@ -1,5 +1,6 @@
 using Application;
 using Domain;
+using Domain.Combat;
 using NUnit.Framework;
 
 namespace Tests
@@ -11,7 +12,7 @@ namespace Tests
         {
             // arrange
             var stats = new CombatStats { MaxMP = 40f, Intelligence = 5 };
-            var hero = new Hero(stats);
+            var hero = new CombatantEntity(stats);
 
             var expectedMp = 35.5f;
 
@@ -32,7 +33,7 @@ namespace Tests
         {
             // arrange
             var stats = new CombatStats { MaxMP = 4f, Intelligence = 5 };
-            var hero = new Hero(stats);
+            var hero = new CombatantEntity(stats);
 
             var useCase = new DodgeUseCase();
             

@@ -1,4 +1,4 @@
-namespace Assets.Scripts.Domain
+namespace Domain.Combat
 {
     public static class DamageFormula
     {

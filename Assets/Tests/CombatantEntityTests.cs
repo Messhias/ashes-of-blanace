@@ -1,17 +1,18 @@
 using Domain;
+using Domain.Combat;
 using NUnit.Framework;
 using UnityEngine;
 
 namespace Tests
 {
-    public class HeroTests
+    public class CombatantEntityTests
     {
         [Test]
         public void Hero_AppliesDamageCorrectly_ReducesHP()
         {
             // arrange
             var initialStats = new CombatStats { Defense = 10, MaxHP = 100f, MpRegenPerSecond = 5f };
-            var hero = new Hero(initialStats);
+            var hero = new CombatantEntity(initialStats);
 
             const float rawDamage = 20f;
             const float expectedHp = 82f; // 100 - 18
@@ -28,7 +29,7 @@ namespace Tests
         {
             // arrange
             var initialStats = new CombatStats { Defense = 10, MaxHP = 100f };
-            var hero = new Hero(initialStats);
+            var hero = new CombatantEntity(initialStats);
 
             var rawDamage = Random.Range(1000f, 2000f);
 
@@ -44,7 +45,7 @@ namespace Tests
         {
             // arrange
             var initialStats = new CombatStats { MaxMP = 40f };
-            var hero = new Hero(initialStats);
+            var hero = new CombatantEntity(initialStats);
 
             hero.TrySpendMp(10f);
 
@@ -60,7 +61,7 @@ namespace Tests
         {
             // arrange
             var initialStats = new CombatStats { MaxMP = 40f };
-            var hero = new Hero(initialStats);
+            var hero = new CombatantEntity(initialStats);
             var largeCost = 50f;
 
             // act

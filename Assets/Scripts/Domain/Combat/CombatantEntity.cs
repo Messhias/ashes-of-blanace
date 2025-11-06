@@ -1,8 +1,6 @@
-using Assets.Scripts.Domain;
-
-namespace Domain
+namespace Domain.Combat
 {
-    public class Hero : ICombatant
+    public class CombatantEntity : ICombatant
     {
         #region HP props
 
@@ -29,7 +27,7 @@ namespace Domain
         public int Attack { get; }
         public int Intelligence { get; }
 
-        public Hero(ICombatStats combatStats)
+        public CombatantEntity(ICombatStats combatStats)
         {
             MaxHP = combatStats.MaxHP;
             CurrentHP = combatStats.MaxHP;

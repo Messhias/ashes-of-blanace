@@ -1,5 +1,6 @@
 using Application;
 using Domain;
+using Domain.Combat;
 using NUnit.Framework;
 
 namespace Tests
@@ -20,8 +21,8 @@ namespace Tests
                 Defense = 0,
                 MaxHP = 50f,
             };
-            var attacker = new Hero(attackerStats);
-            var target = new Hero(targetStats);
+            var attacker = new CombatantEntity(attackerStats);
+            var target = new CombatantEntity(targetStats);
             
             var expectedTargetHp = 38f;
             var currentTime = 5.0f;

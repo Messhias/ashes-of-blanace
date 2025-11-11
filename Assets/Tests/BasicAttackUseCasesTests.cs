@@ -6,6 +6,15 @@ namespace Tests
 {
     public class BasicAttackUseCasesTests
     {
+        private IBasicAttackUseCase _useCase;
+
+        [SetUp]
+        public void Setup()
+        {
+            _useCase = new BasicAttackUseCase();
+        }
+        
+        
         [Test]
         public void Execute_AppliesCorrectDamageAndSetsCooldown()
         {
@@ -25,11 +34,9 @@ namespace Tests
             
             var expectedTargetHp = 38f;
             var currentTime = 5.0f;
-
-            var useCase = new BasicAttackUseCase();
             
             // act
-            var success = useCase.Execute(attacker, target, currentTime);
+            var success = _useCase.Execute(attacker, target, currentTime);
             
             Assert.IsTrue(success, "Basic attack not succeeded.");
             Assert.AreEqual(expectedTargetHp, target.CurrentHP, "Target HP is incorrect.");

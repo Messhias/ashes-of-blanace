@@ -1,3 +1,5 @@
+using System;
+
 namespace Domain.Combat
 {
     public class CombatantEntity : ICombatant
@@ -5,8 +7,6 @@ namespace Domain.Combat
         #region HP props
 
         public float CurrentHP { get; private set; }
-
-        // ReSharper disable once InconsistentNaming
         public float MaxHP { get; }
         public int Defense { get; }
 
@@ -14,10 +14,7 @@ namespace Domain.Combat
 
         #region MP props
 
-        // ReSharper disable once InconsistentNaming
         public float CurrentMP { get; private set; }
-
-        // ReSharper disable once InconsistentNaming
         public float MaxMP { get; }
         public float MpRegenPerSecond { get; set; }
 
@@ -26,7 +23,10 @@ namespace Domain.Combat
         public float LastActionTime { get; set; }
         public int Attack { get; }
         public int Intelligence { get; }
-
+        public bool IsDead { get; private set; }
+        internal event Action<float> OnDamageTaken;
+        internal event Action OnDeath;
+        
         public CombatantEntity(ICombatStats combatStats)
         {
             MaxHP = combatStats.MaxHP;
@@ -39,18 +39,29 @@ namespace Domain.Combat
             MaxMP = combatStats.MaxMP;
             CurrentMP = combatStats.MaxMP;
             MpRegenPerSecond = combatStats.MpRegenPerSecond;
+
+            IsDead = false;
         }
-
-
+        
         public void ApplyDamage(float damage)
         {
+            if (IsDead)
+            {
+                return;
+            }
+            
             var finalDamage = DamageFormula.CalculateDamage(damage, Defense);
 
             CurrentHP -= finalDamage;
-            if (CurrentHP <= 0)
-            {
-                CurrentHP = 0;
-            }
+            
+            OnDamageTaken?.Invoke(damage);
+            
+            if (!(CurrentHP <= 0)) return;
+            
+            CurrentHP = 0;
+            IsDead = true;
+            
+            OnDeath?.Invoke();
         }
 
         public void RestoreMp(float mp)

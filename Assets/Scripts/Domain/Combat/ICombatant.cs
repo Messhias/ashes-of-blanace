@@ -7,12 +7,17 @@ namespace Domain.Combat
         // ReSharper disable once InconsistentNaming
         float MaxHP { get; }
         int Defense { get; }
+        // ReSharper disable once InconsistentNaming
+        float CurrentMP { get; }
+        // ReSharper disable once InconsistentNaming
+        float MaxMP { get; }
+        float MpRegenPerSecond { get; set; }
         float LastActionTime { get; set; }
         int Attack { get; }
         int Intelligence { get; }
-        float MpRegenPerSecond { get; set; }
+        bool IsDead { get; }
         void ApplyDamage(float damage);
-        bool TrySpendMp(float amount);
-        void RestoreMp(float regenAmount);
+        void RestoreMp(float mp);
+        bool TrySpendMp(float cost);
     }
 }

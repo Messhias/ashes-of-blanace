@@ -20,9 +20,15 @@ namespace Infrastructure.ScriptableObjects
 
         [Header("Regeneration")] private float _mpRegenPerSecond = 5f;
 
+        public float MaxHp
+        {
+            get => maxHp;
+            set => maxHp = value;
+        }
+
         public CombatStats ToDomainStats() => new CombatStats
         {
-            MaxHP = maxHp,
+            MaxHP = MaxHp,
             MaxMP = maxMp,
             Attack = attack,
             Defense = defense ,

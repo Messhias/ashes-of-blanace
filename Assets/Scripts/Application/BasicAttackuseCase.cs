@@ -2,7 +2,7 @@ using Domain.Combat;
 
 namespace Application
 {
-    public class BasicAttackUseCase
+    public class BasicAttackUseCase : IBasicAttackUseCase
     {
         private const float Cooldown = 0.5f;
         private const float DamageMultiplier = 1.0f;

@@ -11,7 +11,7 @@ namespace Infrastructure.Controllers
         private CombatStatsSo initialStats;
 
         private ICombatant _entity;
-        private BasicAttackUseCase _basicAttack;
+        private IBasicAttackUseCase _basicAttack;
         private DodgeUseCase _dodge;
 
         private Rigidbody _rigidbody;

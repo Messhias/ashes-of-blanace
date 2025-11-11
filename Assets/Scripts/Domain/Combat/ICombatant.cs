@@ -10,7 +10,9 @@ namespace Domain.Combat
         float LastActionTime { get; set; }
         int Attack { get; }
         int Intelligence { get; }
+        float MpRegenPerSecond { get; set; }
         void ApplyDamage(float damage);
         bool TrySpendMp(float amount);
+        void RestoreMp(float regenAmount);
     }
 }

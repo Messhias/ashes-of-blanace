@@ -19,7 +19,7 @@ namespace Domain.Combat
 
         // ReSharper disable once InconsistentNaming
         public float MaxMP { get; }
-        public float MpRegenPerSecond { get; }
+        public float MpRegenPerSecond { get; set; }
 
         #endregion
 

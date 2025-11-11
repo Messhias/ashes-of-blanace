@@ -1,4 +1,3 @@
-using Domain;
 using Domain.Combat;
 using NUnit.Framework;
 

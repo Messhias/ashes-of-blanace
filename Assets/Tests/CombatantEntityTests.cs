@@ -1,5 +1,6 @@
 using Domain.Combat;
 using NUnit.Framework;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 namespace Tests
@@ -10,11 +11,11 @@ namespace Tests
         public void Hero_AppliesDamageCorrectly_ReducesHP()
         {
             // arrange
-            var initialStats = new CombatStats { Defense = 10, MaxHP = 100f, MpRegenPerSecond = 5f };
-            var hero = new CombatantEntity(initialStats);
+            var hero = MockCombatant.CreateCombatant(new CombatStats
+                { Defense = 10, MaxHP = 100f, MpRegenPerSecond = 5f });
 
             const float rawDamage = 20f;
-            const float expectedHp = 82f; // 100 - 18
+            const float expectedHp = 82f;
 
             // act
             hero.ApplyDamage(rawDamage);
@@ -27,8 +28,7 @@ namespace Tests
         public void Hero_HPDoesNotGoBelowZero_OnLethalDamage()
         {
             // arrange
-            var initialStats = new CombatStats { Defense = 10, MaxHP = 100f };
-            var hero = new CombatantEntity(initialStats);
+            var hero = MockCombatant.CreateCombatant(new CombatStats { Defense = 10, MaxHP = 100f });
 
             var rawDamage = Random.Range(1000f, 2000f);
 
@@ -43,8 +43,7 @@ namespace Tests
         public void Hero_RestoreMP_CannotExceedMaxMP()
         {
             // arrange
-            var initialStats = new CombatStats { MaxMP = 40f };
-            var hero = new CombatantEntity(initialStats);
+            var hero = MockCombatant.CreateCombatant(new CombatStats { MaxMP = 40f });
 
             hero.TrySpendMp(10f);
 
@@ -52,16 +51,15 @@ namespace Tests
             hero.RestoreMp(1000f);
 
             // assert
-            Assert.AreEqual(initialStats.MaxMP, hero.CurrentMP);
+            Assert.AreEqual(new CombatStats { MaxMP = 40f }.MaxMP, hero.CurrentMP);
         }
 
         [Test]
         public void Hero_TrySpendMP_FailsWhenInsufficientMP()
         {
             // arrange
-            var initialStats = new CombatStats { MaxMP = 40f };
-            var hero = new CombatantEntity(initialStats);
-            var largeCost = 50f;
+            var hero = MockCombatant.CreateCombatant(new CombatStats { MaxMP = 40f });
+            const float largeCost = 50f;
 
             // act
             var success = hero.TrySpendMp(largeCost);
@@ -69,6 +67,50 @@ namespace Tests
             // assert
             Assert.IsFalse(success);
             Assert.AreEqual(hero.MaxMP, hero.CurrentMP);
+        }
+
+        [Test]
+        public void ApplyDamage_TriggersOnDamageTakenEvent()
+        {
+            // arrange
+            var hero = MockCombatant.CreateCombatant(new CombatStats
+            {
+                MaxHP = 100f,
+                Defense = 0
+            });
+            float? damageReceived = null;
+            const float expectedDamage = 25f;
+            
+            hero.OnDamageTaken += damage => damageReceived = damage;
+            
+            //act
+            hero.ApplyDamage(expectedDamage);
+            
+            // assert
+            Assert.IsTrue(damageReceived.HasValue);
+            Assert.AreEqual(expectedDamage, damageReceived.Value);
+        }
+
+        [TestCase(100f, 0, 100f)]
+        [TestCase(100f, 0, 1100f)]
+        public void ApplyDamage_TriggersOnDeathEvent_WhenHPReachesZero(float hp, int defense, float damage)
+        {
+            // arrange
+            var hero = MockCombatant.CreateCombatant(new CombatStats
+            {
+                MaxHP = hp,
+                Defense = defense
+            });
+            var deathEventIsTriggered = false;
+            hero.OnDeath += () => deathEventIsTriggered = true;
+            
+            // act
+            hero.ApplyDamage(damage);
+            
+            // assert
+            Assert.IsTrue(deathEventIsTriggered);
+            Assert.IsTrue(hero.IsDead);
+            Assert.AreEqual(0f,  hero.CurrentHP);
         }
     }
 }

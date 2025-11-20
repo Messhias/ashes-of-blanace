@@ -5,7 +5,6 @@ namespace Domain.Combat
     public class CombatantEntity : ICombatant
     {
         #region HP props
-
         public float CurrentHP { get; private set; }
         public float MaxHP { get; }
         public int Defense { get; }
@@ -24,8 +23,8 @@ namespace Domain.Combat
         public int Attack { get; }
         public int Intelligence { get; }
         public bool IsDead { get; private set; }
-        internal event Action<float> OnDamageTaken;
-        internal event Action OnDeath;
+        public event Action<float> OnDamageTaken;
+        public event Action OnDeath;
         
         public CombatantEntity(ICombatStats combatStats)
         {

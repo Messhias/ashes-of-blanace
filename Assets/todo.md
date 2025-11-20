@@ -1,0 +1,1 @@
+# verificar da onde eu tirei o reduction factor 0.01 no dodge.

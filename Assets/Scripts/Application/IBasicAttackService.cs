@@ -2,7 +2,7 @@ using Domain.Combat;
 
 namespace Application
 {
-    public interface IBasicAttackUseCase
+    public interface IBasicAttackService
     {
         bool Execute(ICombatant attacker, ICombatant target, float currentTime);
     }

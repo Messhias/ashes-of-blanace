@@ -2,14 +2,28 @@ using Domain.Combat;
 using Infrastructure.ScriptableObjects;
 using UnityEngine;
 
-namespace Infrastructure.Controllers
+namespace Infrastructure.Adapters
 {
-    public class EnemyController : MonoBehaviour
+    public class EnemyAdapter : MonoBehaviour
     {
         [SerializeField] private CombatStatsSo initialStats;
         private CombatantEntity _entity;
 
         public ICombatant GetCombatantEntity() => _entity;
+
+        public void Initialize(ICombatStatsSo stats)
+        {
+            if (stats != null)
+            {
+                _entity = new CombatantEntity(stats.ToDomainStats());
+            }
+
+            if (_entity != null)
+            {
+                _entity.OnDamageTaken += HandleVisualHit;
+                _entity.OnDeath += HandleDeath;
+            }
+        }
 
         private void Awake()
         {

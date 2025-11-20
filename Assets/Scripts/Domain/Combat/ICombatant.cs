@@ -1,3 +1,5 @@
+using System;
+
 namespace Domain.Combat
 {
     public interface ICombatant
@@ -19,5 +21,7 @@ namespace Domain.Combat
         void ApplyDamage(float damage);
         void RestoreMp(float mp);
         bool TrySpendMp(float cost);
+        event Action<float> OnDamageTaken;
+        event Action OnDeath;
     }
 }

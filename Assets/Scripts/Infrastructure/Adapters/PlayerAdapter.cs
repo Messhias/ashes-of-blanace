@@ -3,16 +3,16 @@ using Domain.Combat;
 using Infrastructure.ScriptableObjects;
 using UnityEngine;
 
-namespace Infrastructure.Controllers
+namespace Infrastructure.Adapters
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerAdapter : MonoBehaviour
     {
         [Header("Stats Data (SO)")] [SerializeField]
         private CombatStatsSo initialStats;
 
         private ICombatant _entity;
-        private IBasicAttackUseCase _basicAttack;
-        private DodgeUseCase _dodge;
+        private IBasicAttackService _basicAttack;
+        private DodgeService _dodge;
 
         private Rigidbody _rigidbody;
         private float _movementSpeed = 5f;
@@ -23,8 +23,8 @@ namespace Infrastructure.Controllers
         {
             _rigidbody = GetComponent<Rigidbody>();
             if (initialStats) _entity = new CombatantEntity(initialStats.ToDomainStats());
-            _basicAttack = new BasicAttackUseCase();
-            _dodge = new DodgeUseCase();
+            _basicAttack = new BasicAttackService();
+            _dodge = new DodgeService();
         }
 
         private void Update()

@@ -26,7 +26,13 @@ namespace Infrastructure.ScriptableObjects
             set => maxHp = value;
         }
 
-        public CombatStats ToDomainStats() => new CombatStats
+        public int Defense
+        {
+            get => defense;
+            set => defense = value;
+        }
+
+        public CombatStats ToDomainStats() => new()
         {
             MaxHP = MaxHp,
             MaxMP = maxMp,

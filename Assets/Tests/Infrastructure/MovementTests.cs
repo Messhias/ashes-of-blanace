@@ -1,5 +1,5 @@
 using System.Collections;
-using Infrastructure.Controllers;
+using Infrastructure.Adapters;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -9,7 +9,7 @@ namespace Tests.Infrastructure
 {
     public class MovementTests
     {
-        private PlayerController _controller;
+        private PlayerAdapter _adapter;
         private Rigidbody _rb;
         private GameObject _player;
         private const float MovementSpeed = 5f;
@@ -20,8 +20,8 @@ namespace Tests.Infrastructure
             _player = new GameObject("TestPlayer");
             _rb = _player.AddComponent<Rigidbody>();
             _rb.isKinematic = false; 
-            _controller = _player.AddComponent<PlayerController>();
-            _controller.SetRigidBody(_rb);
+            _adapter = _player.AddComponent<PlayerAdapter>();
+            _adapter.SetRigidBody(_rb);
             yield return null; 
         }
 
@@ -40,7 +40,7 @@ namespace Tests.Infrastructure
             var expectedMagnitude = MovementSpeed;
             
             // ACT
-            _controller.HandleMovementInput(horizontal, vertical);
+            _adapter.HandleMovementInput(horizontal, vertical);
             
             yield return new WaitForFixedUpdate(); 
 

@@ -2,7 +2,7 @@ using Domain.Combat;
 
 namespace Application
 {
-    public class DodgeUseCase
+    public class DodgeService : IDodgeService
     {
         private const float BaseCost = 5.0f;
         private const float IntReductionFactor = 0.1f;
@@ -18,7 +18,7 @@ namespace Application
                 return false;
             }
 
-            if (!caster.TrySpendMp((finalCost))) return false;
+            if (!caster.TrySpendMp(finalCost)) return false;
             
             caster.LastActionTime = currentTime + Cooldown;
             

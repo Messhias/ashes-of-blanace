@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef20ccdd-a4ff-46c4-bf2a-073e0e2faba1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/DodgeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/DodgeService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/DodgeServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/DodgeServiceTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatantEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatantEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/todo.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/todo.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +75,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@d97b7cd61ded/UnityEngine.TestRunner/NUnitExtensions/Commands/StrictCheckCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@d97b7cd61ded/UnityEngine.TestRunner/NUnitExtensions/Runner/CompositeWorkItem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@d97b7cd61ded/UnityEngine.TestRunner/NUnitExtensions/Runner/UnityLogCheckDelegatingCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@a73b706e285a/Runtime/UGUI/UI/Core/Toggle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@b4d700247d4b/Runtime/VisualScripting.Core/Graphs/GraphDebugData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/96fb485cec054076b38fd4ca37644fe629c00/17/3b47d3dd/Physics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca678e8562574911a4b05a3e0a6fcc6f1f7400/5c/f15a5a62/YieldInstruction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -183,7 +183,7 @@
       <workItem from="1763152108230" duration="601000" />
       <workItem from="1763585955255" duration="1979000" />
       <workItem from="1763670448956" duration="5946000" />
-      <workItem from="1763754433026" duration="6062000" />
+      <workItem from="1763754433026" duration="6652000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -281,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763760341009</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Dodge service fix.">
+      <option name="closed" value="true" />
+      <created>1763760546054</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1763760546054</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -330,7 +338,8 @@
     <MESSAGE value="Special attack addedp" />
     <MESSAGE value="Cooldown time for player adapter fix." />
     <MESSAGE value="On damage taken passing the final damage." />
-    <option name="LAST_COMMIT_MESSAGE" value="On damage taken passing the final damage." />
+    <MESSAGE value="Dodge service fix." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodge service fix." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

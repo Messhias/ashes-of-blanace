@@ -38,7 +38,7 @@ namespace Domain.Combat
             MaxMP = combatStats.MaxMP;
             CurrentMP = combatStats.MaxMP;
             MpRegenPerSecond = combatStats.MpRegenPerSecond;
-
+            LastActionTime = 0f;
             IsDead = false;
         }
         

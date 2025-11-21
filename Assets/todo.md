@@ -1,17 +1,3 @@
-6. DodgeService não valida custo mínimo
-   Problema: se INT for muito alta, finalCost pode ficar negativo
-   Arquivo: Application/DodgeService.cs linha 14
-   Solução: usar Mathf.Max(0, finalCost)
-
-7. CombatantEntity não inicializa LastActionTime
-   Problema: LastActionTime não é inicializado no construtor
-   Arquivo: Domain/Combat/CombatantEntity.cs linha 29-43
-   Impacto: primeira ação pode falhar na verificação de cooldown
-   Planejadas (sprints futuras)
-
-8. Sistema de Level Up/XP não implementado
-   GDD: Seção 10 (Progressão de Nível, XP, Distribuição de Pontos)
-   Status: planejado para Sprint S7 (TODO)
 ------
 
 

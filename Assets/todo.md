@@ -1,9 +1,3 @@
-4. CombatStatsSo não inicializa CurrentMP
-   Problema: CurrentMP não é setado no método ToDomainStats()
-   Arquivo: Infrastructure/ScriptableObjects/CombatStatsSo.cs linha 35-43
-   Impacto: MP inicial pode estar zerado
-   Médias (afetam comportamento/corretude)
-
 5. OnDamageTaken passa dano bruto ao invés de dano final
    Problema: evento dispara com damage (bruto) em vez de finalDamage (após mitigação)
    Arquivo: Domain/Combat/CombatantEntity.cs linha 56

@@ -53,7 +53,7 @@ namespace Domain.Combat
 
             CurrentHP -= finalDamage;
             
-            OnDamageTaken?.Invoke(damage);
+            OnDamageTaken?.Invoke(finalDamage);
             
             if (!(CurrentHP <= 0)) return;
             

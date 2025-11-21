@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef20ccdd-a4ff-46c4-bf2a-073e0e2faba1" name="Changes" comment="" />
+    <list default="true" id="ef20ccdd-a4ff-46c4-bf2a-073e0e2faba1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/DodgeService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/DodgeService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/DodgeServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/DodgeServiceTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/todo.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/todo.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +183,7 @@
       <workItem from="1763152108230" duration="601000" />
       <workItem from="1763585955255" duration="1979000" />
       <workItem from="1763670448956" duration="5946000" />
-      <workItem from="1763754433026" duration="5786000" />
+      <workItem from="1763754433026" duration="6062000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -268,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763760057846</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="On damage taken passing the final damage.">
+      <option name="closed" value="true" />
+      <created>1763760341009</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1763760341009</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -316,7 +329,8 @@
     <MESSAGE value="strong attack implemented." />
     <MESSAGE value="Special attack addedp" />
     <MESSAGE value="Cooldown time for player adapter fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cooldown time for player adapter fix." />
+    <MESSAGE value="On damage taken passing the final damage." />
+    <option name="LAST_COMMIT_MESSAGE" value="On damage taken passing the final damage." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

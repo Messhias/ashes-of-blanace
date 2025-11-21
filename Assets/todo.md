@@ -1,8 +1,3 @@
-5. OnDamageTaken passa dano bruto ao invés de dano final
-   Problema: evento dispara com damage (bruto) em vez de finalDamage (após mitigação)
-   Arquivo: Domain/Combat/CombatantEntity.cs linha 56
-   Impacto: UI/feedback podem mostrar valores incorretos
-
 6. DodgeService não valida custo mínimo
    Problema: se INT for muito alta, finalCost pode ficar negativo
    Arquivo: Application/DodgeService.cs linha 14

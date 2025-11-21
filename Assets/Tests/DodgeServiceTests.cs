@@ -80,5 +80,24 @@ namespace Tests
             Assert.IsTrue(success, "Dodge should succeed.");
             Assert.AreEqual(expectedMp, hero.CurrentMP, "MP cost was calculated incorrectly.");
         }
+
+        [Test]
+        public void Execute_CostNeverGoesBelowZero_WhenIntelligenceIsVeryHigh()
+        {
+            // arrange
+            var hero = MockCombatant.CreateCombatant(new CombatStats
+            {
+                MaxMP = 100f,
+                Intelligence = 100,
+            });
+            const float expectedMp = 100f;
+            
+            // act
+            var success =  _service.Execute(hero, 0.0f);
+            
+            // assert
+            Assert.IsTrue(success);
+            Assert.AreEqual(expectedMp, hero.CurrentMP, "MP cost was calculated incorrectly.");
+        }
     }
 }

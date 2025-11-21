@@ -1,4 +1,5 @@
 using Domain.Combat;
+using UnityEngine;
 
 namespace Application
 {
@@ -11,7 +12,7 @@ namespace Application
         public bool Execute(ICombatant caster, float currentTime)
         {
             var mpReduction = caster.Intelligence * IntReductionFactor;
-            var finalCost = BaseCost - mpReduction;
+            var finalCost = Mathf.Max(0f, BaseCost - mpReduction);
 
             if (currentTime < caster.LastActionTime)
             {

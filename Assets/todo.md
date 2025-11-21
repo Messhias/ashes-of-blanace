@@ -1,14 +1,3 @@
-
-2. Ataque Especial (AOE) não implementado
-   GDD: Ataque Especial (25 MP, cooldown 8.0s, dano = INT × 2.0)
-   Status: não existe serviço/interface
-   Arquivos afetados: Application/ (faltam ISpecialAttackService.cs e SpecialAttackService.cs)
-
-3. PlayerAdapter.HandleCombatInput recebe parâmetro incorreto
-   Problema: recebe Time.deltaTime mas deveria receber Time.time
-   Arquivo: Infrastructure/Adapters/PlayerAdapter.cs linha 33
-   Impacto: verificação de cooldown incorreta
-
 4. CombatStatsSo não inicializa CurrentMP
    Problema: CurrentMP não é setado no método ToDomainStats()
    Arquivo: Infrastructure/ScriptableObjects/CombatStatsSo.cs linha 35-43

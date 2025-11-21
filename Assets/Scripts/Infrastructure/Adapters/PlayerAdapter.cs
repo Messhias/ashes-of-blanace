@@ -30,7 +30,7 @@ namespace Infrastructure.Adapters
         private void Update()
         {
             HandleMovementInput(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-            HandleCombatInput(Time.deltaTime);
+            HandleCombatInput(Time.time);
             HandleMpRegeneration(Time.deltaTime);
         }
         

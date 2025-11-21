@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef20ccdd-a4ff-46c4-bf2a-073e0e2faba1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/PlayerAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/PlayerAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/todo.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/todo.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +181,7 @@
       <workItem from="1763152108230" duration="601000" />
       <workItem from="1763585955255" duration="1979000" />
       <workItem from="1763670448956" duration="5946000" />
-      <workItem from="1763754433026" duration="4996000" />
+      <workItem from="1763754433026" duration="5404000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -254,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763758343994</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Special attack addedp">
+      <option name="closed" value="true" />
+      <created>1763759497132</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1763759497132</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -300,7 +309,8 @@
     <MESSAGE value="Basic combat&#10;&#10;WIP." />
     <MESSAGE value="WIP" />
     <MESSAGE value="strong attack implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="strong attack implemented." />
+    <MESSAGE value="Special attack addedp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Special attack addedp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

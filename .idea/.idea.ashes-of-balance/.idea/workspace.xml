@@ -5,35 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef20ccdd-a4ff-46c4-bf2a-073e0e2faba1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.cursor/rules/default.mdc" beforeDir="false" afterPath="$PROJECT_DIR$/.cursor/rules/default.mdc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppScript.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppScript.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackuseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackuseCase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/DodgeUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/DodgeService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/DodgeUseCase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/DodgeService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/IBasicAttackUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/IBasicAttackService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/IBasicAttackUseCase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/IBasicAttackService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatantEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatantEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/ICombatant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Domain/Combat/ICombatant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Controllers/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/EnemyAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Controllers/EnemyController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/EnemyAdapter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Controllers/PlayerAttackZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/AttackHitBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Controllers/PlayerAttackZone.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/AttackHitBox.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Controllers/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/PlayerAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Controllers/PlayerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/PlayerAdapter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ScriptableObjects/CombatStatsSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ScriptableObjects/CombatStatsSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/BasicAttackUseCasesTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/BasicAttackUseCasesTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/CombatantEntityTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/CombatantEntityTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/DodgeUseCaseTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/DodgeServiceTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/DodgeUseCaseTests.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/DodgeServiceTests.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/Infrastructure/CombatTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/Infrastructure/CombatTests.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/Infrastructure/MovementTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/Infrastructure/MovementTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,12 +47,14 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/fabio/Documents/projects/ashes-of-balance/Assets/Scripts/AppScript.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/DodgeService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/IBasicAttackService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Domain/Combat.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatantEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/PlayerAdapter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/ScriptableObjects/CombatStatsSo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tests/BasicAttackUseCasesTests.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,20 +89,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "Device#class com.jetbrains.rider.plugins.unity.run.devices.UnityEditorDeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider#Unity Attach To: Attach to": "Unity Editor",
-    "DeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider": "Unity Editor",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Unity Attach To.Attach to.executor": "Debug",
-    "git-widget-placeholder": "#3 on feature/basic-combat",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;Device#class com.jetbrains.rider.plugins.unity.run.devices.UnityEditorDeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider#Unity Attach To: Attach to&quot;: &quot;Unity Editor&quot;,
+    &quot;DeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider&quot;: &quot;Unity Editor&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Unity Attach To.Attach to.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#3 on feature/basic-combat&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Unity Attach To.Attach to">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.2.12f1/Unity.app/Contents/MacOS/Unity" />
@@ -201,7 +176,8 @@
       <workItem from="1763151251347" duration="821000" />
       <workItem from="1763152108230" duration="601000" />
       <workItem from="1763585955255" duration="1979000" />
-      <workItem from="1763670448956" duration="5624000" />
+      <workItem from="1763670448956" duration="5946000" />
+      <workItem from="1763754433026" duration="165000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -259,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762894458297</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="WIP">
+      <option name="closed" value="true" />
+      <created>1763676202307</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1763676202307</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -303,7 +287,8 @@
     <MESSAGE value="wip" />
     <MESSAGE value="Base engine&#10;&#10;done" />
     <MESSAGE value="Basic combat&#10;&#10;WIP." />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic combat&#10;&#10;WIP." />
+    <MESSAGE value="WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

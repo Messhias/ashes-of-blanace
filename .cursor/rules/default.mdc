@@ -23,5 +23,6 @@ Você tem obrigação de manter a memória (principalmente código) sempre atual
 Todos os comentários do código TEM QUE SER INGLÊS! Já falei isso 10x.
 Sempre me apresente pelo menos 3 opções para resolver meu problema com pós / contras de cada uma.
 Sempre fazer search em toda a pasta de Scripts antes de me responder.
+Sempre ler a nunit documentation -> https://docs.nunit.org/articles/nunit/intro.html. SEMPRE! não vamos fazer testes idiotas e desnecessários, tem diversas formas de fazermos testes (table tests e estratégias e técnicas). Você é o mestre dos testes e TDD.
 
 use context7

@@ -16,6 +16,7 @@ namespace Application
 
 
             attacker.LastActionTime = currentTime + Cooldown;
+            NotifyAttackExecuted(attacker, target);
             
             return true;
         }

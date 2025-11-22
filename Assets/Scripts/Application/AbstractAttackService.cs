@@ -1,3 +1,4 @@
+using System;
 using Domain.Combat;
 
 namespace Application
@@ -7,6 +8,9 @@ namespace Application
         internal float Cooldown = 0.5f;
         internal float DamageMultiplier = 1.0f;
         internal float MpCost;
+        public abstract bool Execute(ICombatant attacker, ICombatant target, float currentTime);
+        public event Action<ICombatant, ICombatant> OnAttackExecuted;
+
 
         internal void SetCooldown(float value)
         {
@@ -23,6 +27,9 @@ namespace Application
             MpCost = value;
         }
 
-        public abstract bool Execute(ICombatant attacker, ICombatant target, float currentTime);
+        protected void NotifyAttackExecuted(ICombatant attacker, ICombatant target)
+        {
+            OnAttackExecuted?.Invoke(attacker, target);
+        }
     }
 }

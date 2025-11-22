@@ -21,6 +21,7 @@ namespace Application
             target.ApplyDamage(rawDamage);
 
             attacker.LastActionTime = currentTime + Cooldown;
+            NotifyAttackExecuted(attacker, target);
 
             return true;
         }

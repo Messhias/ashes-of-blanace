@@ -15,7 +15,7 @@ namespace Infrastructure.ScriptableObjects
         [SerializeField]
         private float initialHp = 50f;
         [SerializeField]
-        private float initialMp = 0f;
+        private float initialMp;
         [SerializeField]
         private int initialAttack = 10;
         [SerializeField]

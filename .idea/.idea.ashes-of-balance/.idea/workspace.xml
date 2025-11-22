@@ -6,7 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="ef20ccdd-a4ff-46c4-bf2a-073e0e2faba1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/IBasicAttackService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/IBasicAttackService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/ISpecialAttackService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/ISpecialAttackService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/IStrongAttackService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/IStrongAttackService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/SpecialAttackService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/SpecialAttackService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Application/StrongAttackService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Application/StrongAttackService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/AttackHitBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/AttackHitBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/PlayerAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/PlayerAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ScriptableObjects/EnemyStatsData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ScriptableObjects/EnemyStatsData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/BasicAttackUseCasesTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/BasicAttackUseCasesTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/SpecialAttackServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/SpecialAttackServiceTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tests/StrongAttackServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/StrongAttackServiceTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/todo.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/todo.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +64,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/GDD.md.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/AbstractAttackService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/DodgeService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/IBasicAttackService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/IAbstractAttackService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Domain/Combat.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Domain/Combat/CombatantEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters.meta" root0="FORCE_HIGHLIGHTING" />
@@ -184,7 +200,7 @@
       <workItem from="1763585955255" duration="1979000" />
       <workItem from="1763670448956" duration="5946000" />
       <workItem from="1763754433026" duration="6918000" />
-      <workItem from="1763821011978" duration="2175000" />
+      <workItem from="1763821011978" duration="3297000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -314,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763822727338</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Strong attack tests missing added.">
+      <option name="closed" value="true" />
+      <created>1763823271013</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1763823271013</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -367,7 +391,8 @@
     <MESSAGE value="updates" />
     <MESSAGE value="engine updates" />
     <MESSAGE value="added missing tests to the combatant entity." />
-    <option name="LAST_COMMIT_MESSAGE" value="added missing tests to the combatant entity." />
+    <MESSAGE value="Strong attack tests missing added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Strong attack tests missing added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -389,23 +414,23 @@
           <line>32</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Tests/SpecialAttackServiceTests.cs" containingFunctionPresentation="Method 'Execute_AppliesCorrectDamageAndSetsCooldown'">
             <startOffsets>
-              <option value="851" />
+              <option value="852" />
             </startOffsets>
             <endOffsets>
-              <option value="913" />
+              <option value="914" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Application/SpecialAttackService.cs</url>
-          <line>17</line>
+          <line>20</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Application/SpecialAttackService.cs" containingFunctionPresentation="Method 'Execute'">
             <startOffsets>
-              <option value="575" />
+              <option value="588" />
             </startOffsets>
             <endOffsets>
-              <option value="605" />
+              <option value="618" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />

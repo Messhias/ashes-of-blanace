@@ -11,7 +11,7 @@ namespace Infrastructure.Adapters
         private CombatStatsSo initialStats;
 
         private ICombatant _entity;
-        private IBasicAttackService _basicAttack;
+        private IAbstractAttackService _basicAttack;
         private DodgeService _dodge;
 
         private Rigidbody _rigidbody;

@@ -2,13 +2,16 @@ using Domain.Combat;
 
 namespace Application
 {
-    public class StrongAttackService : IStrongAttackService
+    public class StrongAttackService : AbstractAttackService
     {
-        private const float Cooldown = 3.0f;
-        private const float DamageMultiplier = 1.8f;
-        private const float MpCost = 10f;
+        public StrongAttackService()
+        {
+            SetCooldown(3.0f);
+            SetDamageMultiplier(1.8f);
+            SetMpCost(10f);
+        }
 
-        public bool Execute(ICombatant attacker, ICombatant target, float currentTime)
+        public override bool Execute(ICombatant attacker, ICombatant target, float currentTime)
         {
             if (currentTime < attacker.LastActionTime) return false;
 
@@ -16,7 +19,7 @@ namespace Application
 
             var rawDamage = attacker.Attack * DamageMultiplier;
             target.ApplyDamage(rawDamage);
-            
+
             attacker.LastActionTime = currentTime + Cooldown;
 
             return true;

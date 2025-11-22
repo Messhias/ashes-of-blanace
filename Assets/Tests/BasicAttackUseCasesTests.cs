@@ -6,7 +6,7 @@ namespace Tests
 {
     public class BasicAttackUseCasesTests
     {
-        private IBasicAttackService _service;
+        private IAbstractAttackService _service;
 
         [SetUp]
         public void Setup()

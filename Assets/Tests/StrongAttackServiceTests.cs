@@ -6,7 +6,7 @@ namespace Tests
 {
     public class StrongAttackServiceTests
     {
-        private IStrongAttackService _service;
+        private IAbstractAttackService _service;
 
         [SetUp]
         public void Setup()

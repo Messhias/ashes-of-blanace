@@ -7,7 +7,7 @@ namespace Infrastructure.Adapters
 {
     public class AttackHitBox : MonoBehaviour
     {
-        private IBasicAttackService _basicAttack;
+        private IAbstractAttackService _basicAttack;
         private ICombatant _entity;
 
         private void OnCollisionEnter(Collision other)
@@ -46,7 +46,7 @@ namespace Infrastructure.Adapters
             }
         }
 
-        public void SetBasicAttack(IBasicAttackService service)
+        public void SetBasicAttack(IAbstractAttackService service)
         {
             _basicAttack = service;
         }

@@ -2,12 +2,9 @@ using Domain.Combat;
 
 namespace Application
 {
-    public class BasicAttackService : IBasicAttackService
+    public class BasicAttackService: AbstractAttackService
     {
-        private const float Cooldown = 0.5f;
-        private const float DamageMultiplier = 1.0f;
-
-        public bool Execute(ICombatant attacker, ICombatant target, float currentTime)
+        public override bool Execute(ICombatant attacker, ICombatant target, float currentTime)
         {
             if (currentTime < attacker.LastActionTime)
             {

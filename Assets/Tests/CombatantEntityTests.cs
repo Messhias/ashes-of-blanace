@@ -112,5 +112,28 @@ namespace Tests
             Assert.IsTrue(hero.IsDead);
             Assert.AreEqual(0f,  hero.CurrentHP);
         }
+
+        [TestCase(5f,1f,5f)]
+        [TestCase(5f,0.5f,2.5f)]
+        [TestCase(10f,2f,20f)]
+        public void Hero_RegeneratesMP_PassivelyOverTime(float mpRegenPerSecond, float deltaTime, float expectedRegen)
+        {
+            // arrange
+            var hero = MockCombatant.CreateCombatant(new CombatStats()
+            {
+                MpRegenPerSecond = mpRegenPerSecond,
+            });
+
+            hero.TrySpendMp(hero.MaxMP);
+            var initialMp =  hero.CurrentMP;
+            var expectedMp = initialMp + expectedRegen;
+            
+            // act
+            var regenAmount = hero.MpRegenPerSecond * deltaTime;
+            hero.RestoreMp(regenAmount);
+            
+            // assert
+            Assert.AreEqual(expectedMp, hero.CurrentMP);
+        }
     }
 }

@@ -20,19 +20,15 @@ namespace Tests
             Assert.AreEqual(expectedFinalDamage, actualDamage);
         }
 
-        [Test]
-        public void CalculateDamage_AppliesNotMitigation_ZeroDefense()
+        [TestCase(50f, 0, 50f)]
+        [TestCase(100f, 70, 30f)]
+        public void CalculateDamage_AppliesNotMitigation_ZeroDefense(float rawDamage, int defense, float expectedFinalDamage)
         {
-            // arrange
-            var rawDamage = 50f;
-            var defense = 0;
-            var expectedFinalDamage = 50f;
-
             // act
             var actualDamage = DamageFormula.CalculateDamage(rawDamage, defense);
 
             // assert
-            Assert.AreEqual(expectedFinalDamage, actualDamage);
+            Assert.AreEqual(expectedFinalDamage, actualDamage, 0.001f);
         }
     }
 }

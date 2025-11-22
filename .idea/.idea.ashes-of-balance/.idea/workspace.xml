@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef20ccdd-a4ff-46c4-bf2a-073e0e2faba1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/CombatantEntityTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/CombatantEntityTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/DamageFormulaTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/DamageFormulaTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/todo.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/todo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/StrongAttackServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/StrongAttackServiceTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +184,7 @@
       <workItem from="1763585955255" duration="1979000" />
       <workItem from="1763670448956" duration="5946000" />
       <workItem from="1763754433026" duration="6918000" />
-      <workItem from="1763821011978" duration="1501000" />
+      <workItem from="1763821011978" duration="2175000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -308,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763821748972</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added missing tests to the combatant entity.">
+      <option name="closed" value="true" />
+      <created>1763822727338</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1763822727338</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -360,7 +366,8 @@
     <MESSAGE value="Dodge service fix." />
     <MESSAGE value="updates" />
     <MESSAGE value="engine updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="engine updates" />
+    <MESSAGE value="added missing tests to the combatant entity." />
+    <option name="LAST_COMMIT_MESSAGE" value="added missing tests to the combatant entity." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

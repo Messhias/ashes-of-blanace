@@ -103,5 +103,41 @@ namespace Tests
             Assert.IsTrue(success);
             Assert.AreEqual(expectedHp, target.CurrentHP, 0.1f);
         }
+
+        [Test]
+        public void Execute_SpendCorrectMpCost_10mp()
+        {
+            // arrange
+            var attacker = MockCombatant.CreateCombatant(new CombatStats());
+            var target = MockCombatant.CreateCombatant(new CombatStats());
+
+            const float expectedMpAfterAttack = 30f;
+            const float currentTime = 5.0f;
+            
+            // act
+            var success = _service.Execute(attacker, target, currentTime);
+            
+            // assert
+            Assert.IsTrue(success);
+            Assert.AreEqual(expectedMpAfterAttack, attacker.CurrentMP);
+        }
+
+        [Test]
+        public void Execute_SetsCorrectCooldown_3Seconds()
+        {
+            // arrange
+            var attacker = MockCombatant.CreateCombatant(new CombatStats());
+            var target = MockCombatant.CreateCombatant(new CombatStats());
+
+            const float currentTime = 5.0f;
+            const float expectedLastActionTime = currentTime + 3.0f;
+            
+            // act
+            var success = _service.Execute(attacker, target, currentTime);
+            
+            // assert
+            Assert.IsTrue(success);
+            Assert.AreEqual(expectedLastActionTime, attacker.LastActionTime);
+        }
     }
 }

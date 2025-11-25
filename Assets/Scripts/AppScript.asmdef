@@ -1,5 +1,9 @@
 {
     "name": "AppScript",
+    "references": [
+        "Unity.TextMeshPro",
+        "Unity.InputSystem"
+    ],
     "internalsVisibleTo": [
         "Tests"
     ]

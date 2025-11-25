@@ -2,7 +2,6 @@
 
 using Domain.Combat;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Infrastructure.ScriptableObjects
 {

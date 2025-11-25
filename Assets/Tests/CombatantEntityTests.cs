@@ -1,6 +1,5 @@
 using Domain.Combat;
 using NUnit.Framework;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 namespace Tests

@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ef20ccdd-a4ff-46c4-bf2a-073e0e2faba1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ashes-of-balance/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AppScript.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AppScript.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/EnemyAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/EnemyAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/PlayerAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Adapters/PlayerAdapter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +47,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/GDD.md.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/fabio/Documents/projects/ashes-of-balance/Assets/Scripts/AppScript.asmdef" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/AbstractAttackService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Application/BasicAttackService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -188,7 +185,7 @@
       <workItem from="1763670448956" duration="5946000" />
       <workItem from="1763754433026" duration="6918000" />
       <workItem from="1763821011978" duration="5014000" />
-      <workItem from="1764102851324" duration="2891000" />
+      <workItem from="1764102851324" duration="3875000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -342,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763824704858</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="wip">
+      <option name="closed" value="true" />
+      <created>1764105882726</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1764105882726</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -383,7 +388,6 @@
     <MESSAGE value="structure updates" />
     <MESSAGE value="update" />
     <MESSAGE value="Updates" />
-    <MESSAGE value="wip" />
     <MESSAGE value="Base engine&#10;&#10;done" />
     <MESSAGE value="Basic combat&#10;&#10;WIP." />
     <MESSAGE value="WIP" />
@@ -398,7 +402,8 @@
     <MESSAGE value="Strong attack tests missing added." />
     <MESSAGE value="TODOS finished." />
     <MESSAGE value="Attacker event created." />
-    <option name="LAST_COMMIT_MESSAGE" value="Attacker event created." />
+    <MESSAGE value="wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

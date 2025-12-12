@@ -118,7 +118,7 @@ namespace Tests
         public void Hero_RegeneratesMP_PassivelyOverTime(float mpRegenPerSecond, float deltaTime, float expectedRegen)
         {
             // arrange
-            var hero = MockCombatant.CreateCombatant(new CombatStats()
+            var hero = MockCombatant.CreateCombatant(new CombatStats
             {
                 MpRegenPerSecond = mpRegenPerSecond,
             });

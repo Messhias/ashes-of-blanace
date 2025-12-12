@@ -1,3 +1,4 @@
+using System;
 using Domain.Combat;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace Application
         private const float BaseCost = 5.0f;
         private const float IntReductionFactor = 0.1f;
         private const float Cooldown = 0.5f;
+        private const float InvincibilityDuration = 0.25f;
         
         public bool Execute(ICombatant caster, float currentTime)
         {
@@ -22,6 +24,7 @@ namespace Application
             if (!caster.TrySpendMp(finalCost)) return false;
             
             caster.LastActionTime = currentTime + Cooldown;
+            caster.SetInvincibleUntil(currentTime + InvincibilityDuration);
             
             return true;
         }

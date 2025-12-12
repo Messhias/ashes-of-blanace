@@ -96,9 +96,16 @@ namespace Infrastructure.Adapters
             HandleMovementInput(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
             HandleCombatInput(Time.time);
             HandleMpRegeneration(Time.deltaTime);
+
+            if (_entity is CombatantEntity entity)
+            {
+                entity.UpdateInvincibility(Time.time);
+            }
         }
         
         #endregion
+        
+        public ICombatant GetCombatantEntity() => _entity;
 
         public void SetRigidBody(Rigidbody rb)
         {

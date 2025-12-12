@@ -18,10 +18,13 @@ namespace Domain.Combat
         int Attack { get; }
         int Intelligence { get; }
         bool IsDead { get; }
+        bool IsInvincible { get; }
         void ApplyDamage(float damage);
         void RestoreMp(float mp);
         bool TrySpendMp(float cost);
         event Action<float> OnDamageTaken;
         event Action OnDeath;
+        void SetInvincibleUntil(float time);
+        void UpdateInvincibility(float currentTime);
     }
 }

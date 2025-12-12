@@ -11,7 +11,6 @@ namespace Application
         public abstract bool Execute(ICombatant attacker, ICombatant target, float currentTime);
         public event Action<ICombatant, ICombatant> OnAttackExecuted;
 
-
         internal void SetCooldown(float value)
         {
             Cooldown = value;

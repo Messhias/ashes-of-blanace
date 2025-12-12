@@ -23,8 +23,11 @@ namespace Domain.Combat
         public int Attack { get; }
         public int Intelligence { get; }
         public bool IsDead { get; private set; }
+        public bool IsInvincible { get; private set; }
         public event Action<float> OnDamageTaken;
         public event Action OnDeath;
+
+        private float _invincibleUntil;
         
         public CombatantEntity(ICombatStats combatStats)
         {
@@ -40,6 +43,8 @@ namespace Domain.Combat
             MpRegenPerSecond = combatStats.MpRegenPerSecond;
             LastActionTime = 0f;
             IsDead = false;
+            IsInvincible = false;
+            _invincibleUntil = 0;
         }
         
         public void ApplyDamage(float damage)
@@ -48,6 +53,8 @@ namespace Domain.Combat
             {
                 return;
             }
+
+            if (IsInvincible) return;
             
             var finalDamage = DamageFormula.CalculateDamage(damage, Defense);
 
@@ -78,6 +85,20 @@ namespace Domain.Combat
 
             CurrentMP -= cost;
             return true;
+        }
+
+        public void SetInvincibleUntil(float time)
+        {
+            _invincibleUntil = time;
+            IsInvincible = true;
+        }
+        
+        public void UpdateInvincibility(float currentTime)
+        {
+            if (!IsInvincible || !(currentTime >= _invincibleUntil)) return;
+            
+            IsInvincible = false;
+            _invincibleUntil = 0f;
         }
     }
 }

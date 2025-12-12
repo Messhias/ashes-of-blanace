@@ -96,7 +96,7 @@ recurso mais importante.
 
 ### **B. O Personagem (Player)** {#b.-o-personagem-(player)}
 
-Para justificar o seu *moveset* restrito (Ataque Forte/Básico, Rola/Desviar, Especial), usaremos a ideia de um guerreiro
+Para justificar o seu *moveset* restrito (Ataque Forte/Básico, Rolar/Desviar, Especial), usaremos a ideia de um guerreiro
 que usa uma armadura/mecanismo especial:
 
 * **Nome Proposto:** O **Vigilante (The Watcher)**.
@@ -182,7 +182,7 @@ O Vigilante (Player) e todos os inimigos terão os seguintes atributos:
 |:------------------------|:-------------------------------|:-----------------------------------------------------------------------------------------|:--------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|
 | **1\. Ataque Básico**   | Físico (Single Target)         | 0 MP                                                                                     | 0.5s          | Dano Bruto \= [![][image2]](https://www.codecogs.com/eqnedit.php?latex=ATQ%20%5Ctimes%201.0#0) (Rápido, principal fonte de dano sustentável).      |
 | **2\. Ataque Forte**    | Físico (Single Target)         | 10 MP                                                                                    | 3.0s          | Dano Bruto \= [![][image3]](https://www.codecogs.com/eqnedit.php?latex=ATQ%20%5Ctimes%201.8#0) (Alto dano, ideal para inimigos lentos/bosses).     |
-| **3\. Rola/Desviar**    | N/A (Movimentação)             | 5 MP \- (INT [![][image4]](https://www.codecogs.com/eqnedit.php?latex=%5Ctimes%200.1#0)) | 0.5s          | **Invencibilidade (i-frames)** de 0.25 segundos durante a animação. O custo é reduzido pela INT.                                                   |
+| **3\. Rolar/Desviar**    | N/A (Movimentação)             | 5 MP \- (INT [![][image4]](https://www.codecogs.com/eqnedit.php?latex=%5Ctimes%200.1#0)) | 0.5s          | **Invencibilidade (i-frames)** de 0.25 segundos durante a animação. O custo é reduzido pela INT.                                                   |
 | **4\. Ataque Especial** | Mágico (Area of Effect \- AOE) | 25 MP                                                                                    | 8.0s          | Dano Bruto \= [![][image5]](https://www.codecogs.com/eqnedit.php?latex=INT%20%5Ctimes%202.0#0) (Útil contra hordas, gasta o recurso mais valioso). |
 
 ### **4.3. Loop de Combate (Game Feel)** {#4.3.-loop-de-combate-(game-feel)}
@@ -190,7 +190,7 @@ O Vigilante (Player) e todos os inimigos terão os seguintes atributos:
 A essência do combate será a gestão de MP e o timing da esquiva:
 
 1. O Player usa **Ataque Básico** para causar dano e deixar o MP regenerar passivamente.
-2. Quando confrontado com dano inevitável, usa **Rola/Desviar**, consumindo o MP.
+2. Quando confrontado com dano inevitável, usa **Rolar/Desviar**, consumindo o MP.
 3. O Player usa **Ataque Forte** e **Ataque Especial** quando há MP suficiente e eles não estão em Cooldown, forçando a
    escolha: **Dano Máximo** ou **Recurso para Sobrevivência (Rolar)**.
 
@@ -215,7 +215,7 @@ mecânica diferente.
 | Foco de Corrupção (Fase) | Nome Proposto            | Desafio de Combate                                                                                                                                                      | Mini-Boss                                                                                                             |
 |:-------------------------|:-------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
 | **Fase 1**               | **O Grito das Raízes**   | **Controle Básico e Posicionamento.** Inimigos lentos, focados em combate corpo-a-corpo. Força o uso do **Ataque Básico** e **Forte**.                                  | **O Golem Lento:** Lento, mas com muito HP e DEF. Ensina a importância de ter **ATQ**.                                |
-| **Fase 2**               | **O Pântano dos Vigias** | **Gestão de MP para Esquiva.** Introduz inimigos de longo alcance (arqueiros/magos) que atiram projéteis previsíveis. Força o uso estratégico do **Rola/Desviar**.      | **O Tático de Cinza:** Mini-Boss que não ataca, mas invoca 2-3 atiradores. Ensina a priorização de alvos e o *Dodge*. |
+| **Fase 2**               | **O Pântano dos Vigias** | **Gestão de MP para Esquiva.** Introduz inimigos de longo alcance (arqueiros/magos) que atiram projéteis previsíveis. Força o uso estratégico do **Rolar/Desviar**.      | **O Tático de Cinza:** Mini-Boss que não ataca, mas invoca 2-3 atiradores. Ensina a priorização de alvos e o *Dodge*. |
 | **Fase 3**               | **A Cidade Sufocada**    | **Dano em Área (AOE) e Hordas.** Níveis estreitos e cheios de inimigos fracos e numerosos. Força o uso do **Ataque Especial** (INT).                                    | **A Matriz:** Uma estrutura estacionária que expele ondas constantes de *Minions* (Slimes). Ensina a gestão de CD.    |
 | **Fase 4**               | **O Vazio de Vidro**     | **Punição por Erro (Alto Dano/Baixa DEF).** Inimigos muito rápidos ou com *burst* de dano alto. Força o uso de **i-frames** da Rola e exige alta performance do Player. | **O Caçador Veloz:** Rápido, com baixo HP, mas um combo de 3-hits devastador. Exige precisão na esquiva.              |
 | **Fase 5**               | **O Núcleo da Balança**  | **Teste de Combinação de Habilidades.** O nível final combina todos os tipos de inimigos.                                                                               | **Boss Final (A Corrupção):** Com padrões que exigem **Dodge, AOE e Single-Target**.                                  |
@@ -297,7 +297,7 @@ O áudio é essencial para o *game feel* e para quebrar a sensação de vazio do
 ## **8\. Atributos Iniciais e Balanceamento (Level 1\)** {#8.-atributos-iniciais-e-balanceamento-(level-1)}
 
 O objetivo no Nível 1 é que o Vigilante seja **resiliente o suficiente** para sobreviver a alguns erros, mas *
-*dependente de sua mecânica chave (Rola/Desviar)** para o sucesso.
+*dependente de sua mecânica chave (Rolar/Desviar)** para o sucesso.
 
 ### **8.1. Atributos Base do Vigilante (Level 1\)** {#8.1.-atributos-base-do-vigilante-(level-1)}
 
@@ -317,7 +317,7 @@ Com os atributos acima, o *moveset* inicial do Vigilante será:
 |:--------------------|:----------------------|:----------------------------------------------------------------------------------------------------|
 | **Ataque Básico**   | 0 MP                  | **12** (Físico)                                                                                     |
 | **Ataque Forte**    | 10 MP                 | **21.6** (Físico, [![][image10]](https://www.codecogs.com/eqnedit.php?latex=12%20%5Ctimes%201.8#0)) |
-| **Rola/Desviar**    | **4.5 MP** (5 \- 0.5) | N/A (Invencibilidade de 0.25s)                                                                      |
+| **Rolar/Desviar**    | **4.5 MP** (5 \- 0.5) | N/A (Invencibilidade de 0.25s)                                                                      |
 | **Ataque Especial** | 25 MP                 | **10** (Mágico, [![][image11]](http://www.texrendr.com/?eqn=5%20%5Ctimes%202.0%24\)#0)              |
 
 
@@ -395,7 +395,7 @@ teste e a estratégia do jogador.
 | Inimigo (Asset Free)    | Tipo          | Stats (LVL 1\)            | Padrão de Ataque (O que o TDD testa)                                                                                                                                 |
 |:------------------------|:--------------|:--------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Pária de Cinza**      | Melee (Tank)  | HP: 30 / ATQ: 5 / DEF: 15 | **Ataque Lento de 1 Hit:** Caminha lentamente em direção ao Player. Sua alta DEF força o Player a usar o **Ataque Forte** (alto dano de ATQ) para matar rapidamente. |
-| **Vigia de Estilhaços** | Ranged        | HP: 15 / ATQ: 8 / DEF: 5  | **Projetil Previsível:** Atira um projétil lento a cada 2.5s. Sua baixa HP/DEF faz dele um alvo fácil, mas o projétil força o Player a usar a **Rola/Desviar**.      |
+| **Vigia de Estilhaços** | Ranged        | HP: 15 / ATQ: 8 / DEF: 5  | **Projetil Previsível:** Atira um projétil lento a cada 2.5s. Sua baixa HP/DEF faz dele um alvo fácil, mas o projétil força o Player a usar a **Rolar/Desviar**.      |
 | **Slime de Cinza**      | Swarm (Horda) | HP: 8 / ATQ: 3 / DEF: 0   | **Ataque em Grupo:** Movem-se rapidamente em direção ao Player, causando pouco dano. Força o Player a usar o **Ataque Especial** (AOE, dano INT).                    |
 
 ### **B. Mini-Bosses e Bosses (Fase 1 a 3\)** {#b.-mini-bosses-e-bosses-(fase-1-a-3)}
@@ -403,7 +403,7 @@ teste e a estratégia do jogador.
 | Boss                  | Fase | Design e Função Tática                                                                                                                                                                                         | Stats (Aumento de Dificuldade) |
 |:----------------------|:-----|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------|
 | **O Golem Lento**     | 1    | **Teste de ATQ/DEF:** Versão gigante do Pária. Muito lento, mas com HP e DEF altíssimos. Seu único ataque é um *slam* telegrafado, forçando o *Dodge*.                                                         | HP: 300 / ATQ: 10 / DEF: 30    |
-| **O Tático de Cinza** | 2    | **Teste de Rola/Desviar e Priorização:** Não ataca o Player, mas invoca constantemente (a cada 5s) Vigias de Estilhaços (Ranged). Derrotá-lo exige que o Player **priorize a esquiva e o Tático** rapidamente. | HP: 150 / ATQ: 0 / DEF: 10     |
+| **O Tático de Cinza** | 2    | **Teste de Rolar/Desviar e Priorização:** Não ataca o Player, mas invoca constantemente (a cada 5s) Vigias de Estilhaços (Ranged). Derrotá-lo exige que o Player **priorize a esquiva e o Tático** rapidamente. | HP: 150 / ATQ: 0 / DEF: 10     |
 | **A Matriz**          | 3    | **Teste de INT/MP e AOE:** Estrutura estática que lança uma onda de Slimes de Cinza. O Player deve usar o **Ataque Especial** consistentemente para limpar a área antes de atacar a Matriz.                    | HP: 250 / ATQ: 0 / DEF: 15     |
 
 ---
